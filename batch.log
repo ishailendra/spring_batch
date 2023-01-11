@@ -1,0 +1,56 @@
+2022-10-01 18:17:34.850  INFO 3104 --- [main] com.shail.batch.BatchTesterApplication   : Starting BatchTesterApplication using Java 17.0.4.1 on Shail with PID 3104 (D:\Projects\SpringBatch\batch\target\classes started by ssing in D:\Projects\SpringBatch\batch)
+2022-10-01 18:17:34.855  INFO 3104 --- [main] com.shail.batch.BatchTesterApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-01 18:17:35.734  INFO 3104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-01 18:17:35.825  INFO 3104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2022-10-01 18:17:36.479  INFO 3104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 18:17:37.305  INFO 3104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 18:17:37.404  INFO 3104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-01 18:17:37.563  INFO 3104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-01 18:17:37.989  INFO 3104 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-01 18:17:38.187  INFO 3104 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-01 18:17:39.019  INFO 3104 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-01 18:17:39.029  INFO 3104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-01 18:17:40.227  WARN 3104 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2022-10-01 18:17:40.249  INFO 3104 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2022-10-01 18:17:40.446  INFO 3104 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2022-10-01 18:17:40.596  INFO 3104 --- [main] com.shail.batch.BatchTesterApplication   : Started BatchTesterApplication in 6.516 seconds (JVM running for 7.277)
+2022-10-01 18:17:40.599  INFO 3104 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2022-10-01 18:17:40.847  INFO 3104 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] launched with the following parameters: [{date=1664614564217, outputFile=src/main/resources/data.txt, run.id=1}]
+2022-10-01 18:17:40.906  INFO 3104 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [product.productFileStep]
+2022-10-01 18:17:46.100  INFO 3104 --- [main] o.s.batch.core.step.AbstractStep         : Step: [product.productFileStep] executed in 5s193ms
+2022-10-01 18:17:46.148  INFO 3104 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] completed with the following parameters: [{date=1664614564217, outputFile=src/main/resources/data.txt, run.id=1}] and the following status: [COMPLETED] in 5s251ms
+2022-10-01 18:17:55.659  INFO 3104 --- [scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] launched with the following parameters: [{outputFile=src/main/resources/data01102022181755.txt, date=1664628475595}]
+2022-10-01 18:17:55.723  INFO 3104 --- [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [product.productFileStep]
+2022-10-01 18:18:00.198  INFO 3104 --- [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [product.productFileStep] executed in 4s475ms
+2022-10-01 18:18:00.223  INFO 3104 --- [scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] completed with the following parameters: [{outputFile=src/main/resources/data01102022181755.txt, date=1664628475595}] and the following status: [COMPLETED] in 4s554ms
+2022-10-01 18:19:15.595  INFO 3104 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-01 18:19:15.605  INFO 3104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 18:19:15.616  INFO 3104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-01 18:19:21.832  INFO 11748 --- [main] com.shail.batch.BatchTesterApplication   : Starting BatchTesterApplication using Java 17.0.4.1 on Shail with PID 11748 (D:\Projects\SpringBatch\batch\target\classes started by ssing in D:\Projects\SpringBatch\batch)
+2022-10-01 18:19:21.836  INFO 11748 --- [main] com.shail.batch.BatchTesterApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-01 18:19:22.627  INFO 11748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-01 18:19:22.713  INFO 11748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2022-10-01 18:19:23.361  INFO 11748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 18:19:24.000  INFO 11748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 18:19:24.080  INFO 11748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-01 18:19:24.179  INFO 11748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-01 18:19:24.587  INFO 11748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-01 18:19:24.821  INFO 11748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-01 18:19:25.536  INFO 11748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-01 18:19:25.552  INFO 11748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-01 18:19:26.405  WARN 11748 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2022-10-01 18:19:26.422  INFO 11748 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2022-10-01 18:19:26.627  INFO 11748 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2022-10-01 18:19:26.770  INFO 11748 --- [main] com.shail.batch.BatchTesterApplication   : Started BatchTesterApplication in 5.577 seconds (JVM running for 6.218)
+2022-10-01 18:19:26.773  INFO 11748 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2022-10-01 18:19:26.944  INFO 11748 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] launched with the following parameters: [{date=1664628475595, outputFile=src/main/resources/data01102022181755.txt, run.id=1}]
+2022-10-01 18:19:27.003  INFO 11748 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [product.productFileStep]
+2022-10-01 18:19:32.491  INFO 11748 --- [main] o.s.batch.core.step.AbstractStep         : Step: [product.productFileStep] executed in 5s488ms
+2022-10-01 18:19:32.534  INFO 11748 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] completed with the following parameters: [{date=1664628475595, outputFile=src/main/resources/data01102022181755.txt, run.id=1}] and the following status: [COMPLETED] in 5s547ms
+2022-10-01 18:19:41.838  INFO 11748 --- [scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] launched with the following parameters: [{outputFile=src/main/resources/data01102022181941.txt, date=1664628581783}]
+2022-10-01 18:19:41.876  INFO 11748 --- [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [product.productFileStep]
+2022-10-01 18:19:46.123  INFO 11748 --- [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [product.productFileStep] executed in 4s247ms
+2022-10-01 18:19:46.166  INFO 11748 --- [scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=product.productJob]] completed with the following parameters: [{outputFile=src/main/resources/data01102022181941.txt, date=1664628581783}] and the following status: [COMPLETED] in 4s317ms
+2022-10-01 18:20:07.478  INFO 11748 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-01 18:20:07.489  INFO 11748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 18:20:07.499  INFO 11748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
