@@ -12,12 +12,14 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.data.RepositoryItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
 //import org.springframework.batch.item.file.LineMapper;
+import org.springframework.batch.item.file.FlatFileParseException;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 //import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 //import org.springframework.batch.item.file.transform.IncorrectTokenCountException;
 //import org.springframework.batch.item.file.transform.LineTokenizer;
+import org.springframework.batch.item.file.transform.IncorrectTokenCountException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -60,7 +62,8 @@ public class ProductFileImportJob {
                 .writer(itemWriter)
                 .faultTolerant()
 //                .skip(IncorrectTokenCountException.class)
-//                .skipLimit(1)
+                .skip(FlatFileParseException.class)
+                .skipLimit(1)
                 .build();
     }
 

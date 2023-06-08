@@ -52,7 +52,8 @@ public class JobScheduler {
 //        jobParametersBuilder.addDate("date", new Date());
 //        jobLauncher.run(productJob, jobParametersBuilder.toJobParameters());
 
-        String inputFile = "src/main/resources/data/product_" + formattedDate + ".txt";
+        //String inputFile = "src/main/resources/data/product_" + formattedDate + ".txt";
+        String inputFile = "src/main/resources/data/product_" + "12102022" + ".txt";
         JobParametersBuilder jobParametersBuilder = new JobParametersBuilder();
         jobParametersBuilder.addString("inputFile", inputFile);
         jobParametersBuilder.addDate("date", new Date());
