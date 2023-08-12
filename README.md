@@ -1,3 +1,3 @@
 # spring_batch
 
-Spring Batch POC
+Spring Batch POC project
