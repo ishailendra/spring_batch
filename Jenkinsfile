@@ -1,6 +1,8 @@
 node {
   stage('SCM') {
+    echo "Checkout scm step"
     checkout scm
+    echo "Checkout scm complete"
   }
   stage('SonarQube Analysis') {
     def mvn = tool 'maven_tool';
